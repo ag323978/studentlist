@@ -107,7 +107,8 @@ void deleteStudent(vector<Student*> &v, int ID) {
     // if the ID the user entered matches with one of the ones from the vector
     if((*it)->ID == ID) {
       delete *it;
-      //v.erase((it));
+      v.erase(it);
+      break;
     }
   }
 }
